@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Explore DROP 001 product details",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "product collection rendering",
+      "opening product detail dialog",
+      "coming soon product status"
+    ],
+    "description": "Verifies a visitor can browse the DROP 001 concepts and open a product detail dialog.",
+    "steps": [
+      "Open the SHREDLAB storefront",
+      "Navigate to DROP 001",
+      "Open details for the dark blue denim concept"
+    ],
+    "expected": "The product dialog shows the dark blue SHREDLAB concept and clearly states that orders are not open yet."
+  },
+  {
+    "name": "Navigate the storefront on mobile",
+    "viewport": "mobile",
+    "covers": ["responsive mobile navigation", "mobile section navigation"],
+    "description": "Verifies the mobile menu opens and its links navigate to the shop sections.",
+    "steps": [
+      "Open the storefront at mobile viewport",
+      "Open the menu",
+      "Choose SHOP"
+    ],
+    "expected": "The navigation menu opens and the page moves to the DROP 001 product section."
+  },
+  {
+    "name": "Close product details dialog",
+    "viewport": "desktop",
+    "covers": ["product dialog dismissal", "dialog overlay interaction"],
+    "description": "Verifies a visitor can close product information and return to the collection.",
+    "steps": [
+      "Open any product details",
+      "Close the dialog using its close control",
+      "Open another product detail"
+    ],
+    "expected": "The first dialog closes and the visitor can open another product detail."
+  }
+]
